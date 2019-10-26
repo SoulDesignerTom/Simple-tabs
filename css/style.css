@@ -1,0 +1,23 @@
+/* SOME STYLES JUST TO SEE BUTTONS ;) */
+
+.tabs-menu div { cursor:pointer; display:inline-block; border:1px #000000 solid; padding:5px 20px; margin:20px; }
+.tabs-menu div:hover { background:#000000; color:#ffffff; }
+
+
+/* HERE COMES IMPORTANT STYLES */
+
+/* hiding and showing tabs */
+
+.tabs div {
+	display:none;
+}
+
+.tabs div.current {
+	display:block;
+}
+
+/* highlighting selected tab menu */
+
+.tabs-menu div.active {
+	background:#000000; color:#ffffff;
+}
