@@ -3,6 +3,12 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 	</head>
 	<body>
+		
+		<div class="css-switcher">
+			<div class="regular active">regular</div>
+			<div class="animation">animation</div>
+		</div>
+		
 		<div class="tabs-menu">
 			<div id="tab-1" class="tabs-menu-item active">Tab 1</div>
 			<div id="tab-2" class="tabs-menu-item">Tab 2</div>
@@ -22,5 +28,20 @@
 		</div>
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 		<script src="javascript/jquery-simple-tabs-v1.0.js"></script>
+		<script>
+			<!-- this is just for switching css -->
+			jQuery(document).ready(function ($) {
+				$('.regular').bind('click', function() {
+					$('.css-switcher div').removeClass('active');
+					$('link').attr('href', 'css/style.css');
+					$(this).addClass('active');
+				});
+				$('.animation').bind('click', function() {
+					$('.css-switcher div').removeClass('active');
+					$('link').attr('href', 'css/animation-tabs.css');
+					$(this).addClass('active');
+				});
+			});
+		</script>	
 	</body>
 </html>
