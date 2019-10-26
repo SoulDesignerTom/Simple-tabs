@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){tabSelector=t(".tabs-menu div"),tab=t(".tab"),tabSelector.bind("click",function(){tabSelector.removeClass("active"),t(this).addClass("active"),tabId=t(this).attr("id"),tab.removeClass("current"),tab=t("."+tabId).addClass("current"),tab.addClass("current")})});
